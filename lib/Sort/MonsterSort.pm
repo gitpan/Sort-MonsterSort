@@ -4,11 +4,15 @@ use warnings;
 
 require 5.006_001;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use File::Temp 'tempdir';
 use Fcntl qw( :DEFAULT );
 use Carp;
+
+### DEPRECATED MODULE!!
+###
+### Use Sort::External instead.
 
 ### Coding convention:
 ### Public methods use hash style parameters except when to do so would cause 
@@ -364,28 +368,18 @@ __END__
 
 =head1 NAME
 
-Sort::MonsterSort - Sort huge collections
-
-=head1 VERSION
-
-0.01
+Sort::MonsterSort - deprecated - use Sort::External
 
 =head1 WARNING
 
-This is ALPHA release software.  The interface may change.
+DEPRECATED MODULE!
+
+Sort::MonsterSort has been replaced by Sort::External, and is no longer
+maintained.
+
+=begin comment
 
 =head1 SYNOPSIS
-
-    my $monster = Sort::MonsterSort->new;
-    while (<HUGEFILE>) {
-        $monster->feed( $_ );
-    }
-    $monster->burp( -outfile => "sorted.txt");;
-
-=head1 DESCRIPTION
-
-Use Sort::MonsterSort when you have a collection which is too large to sort
-in-memory.
 
 =head1 METHODS
 
@@ -467,6 +461,8 @@ sortfiles.
 Please report any bugs or feature requests to
 C<bug-sort-monstersort@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Sort-MonsterSort>.
+
+=end comment
 
 =head1 AUTHOR
 

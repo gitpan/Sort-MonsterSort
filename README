@@ -1,17 +1,6 @@
-Sort::MonsterSort 0.01
+Sort::MonsterSort 0.02
 
-Use Sort::MonsterSort for sorting collections which are too large to sort
-in-memory.
-
-INSTALLATION
-
-To install this module, run the following commands:
-
-    perl Makefile.PL
-    make
-    make test
-    make install
-
+Sort::MonsterSort has been deprecated.  Use Sort::External instead.
 
 COPYRIGHT AND LICENCE
 

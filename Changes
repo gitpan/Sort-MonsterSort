@@ -1,5 +1,8 @@
 Revision history for Sort-MonsterSort
 
+0.02    2005-06-03 18:00:00
+        Deprecated; functionality moved into Sort::External namespace.
+
 0.01    2005-05-29 14:00:00
         First version, released on an unsuspecting world.
 
